@@ -1,0 +1,110 @@
+/*-----------------  GOOGLE FONTS  -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+/*-----------------  VARIABLES  -----------------*/
+:root {
+    /* Colors */ 
+    --gold_color: rgb(255, 191, 0);
+    --glass_color: rgba(255, 255, 255, 0.05);
+    --shadow_color: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+/*-----------------  Base  -----------------*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    color: var(--gold_color);
+}
+body {
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+/*-----------------  Styling Start  -----------------*/
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+}
+.headings {
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.headings h1 {
+  text-shadow: var(--shadow_color);
+  font-size: 6.2rem;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+}
+.headings h3 {
+  font-size: 3.5rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+}
+.headings h4 {
+  font-size: 4rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+}
+.countdown {
+  width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.6rem;
+}
+.detail {
+  width: 28vmin;
+  height: 29vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+span.number {
+  background-color: var(--glass_color);
+  backdrop-filter: blur(7.5rem);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+  box-shadow: var(--shadow_color);
+  border-radius: 0.1rem;
+}
+span.number:after {
+  content: "";
+  position: absolute;
+  background-color: var(--glass_color);
+  height: 100%;
+  width: 50%;
+  left: 0;
+}
+span.sub_heading {
+  font-size: 1.5rem;
+  background-color: var(--glass_color);
+  backdrop-filter: blur(7.5rem);
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 0.7rem 0;
+  font-weight: 600;
+  border-radius: 0.1rem;
+  box-shadow: var(--shadow_color);
+}
+ 
