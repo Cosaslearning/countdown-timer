@@ -1,4 +1,4 @@
-# countdown-timer
+# Countdown Timer
 
 ![Screenshot_1](https://github.com/Cosaslearning/countdown-timer/assets/100014446/d9129276-5fb4-4a6d-83d5-0e666ef0c7d2)
 
